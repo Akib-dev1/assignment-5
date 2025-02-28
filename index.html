@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevBoard</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <style>
+        *{
+            font-family: "Poppins", sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-[#F4F7FF] h-screen px-36 pt-6">
+    <header>
+        <nav class="bg-white flex items-center justify-between p-6 rounded-2xl">
+            <div class="flex items-center gap-2">
+                <img src="assets/logo.png" alt="logo">
+                <h1 class="font-bold text-4xl"><span class="font-normal">Dev</span>Board</h1>
+            </div>
+            <div class="flex items-center gap-9">
+                <div class="flex items-center gap-2 bg-[#F4F7FF] p-3 rounded-[32px]">
+                    <img src="assets/checkbox.png" alt="checkbox">
+                    <p class="font-bold text-3xl">23</p>
+                </div>
+                <div class="p-3 rounded-full bg-[#F4F7FF] cursor-pointer">
+                    <img src="assets/theme-btn.png" alt="theame-btn">
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="pb-14">
+        <section class="mt-5 flex gap-6 mb-14">
+            <div class="bg-white px-6 pt-6 pb-8 rounded-2xl flex-1">
+                <div class="flex items-center gap-6">
+                    <div class="flex items-center gap-5 pt-8 pr-5 pb-6 pl-8 bg-[#F4F7FF] rounded-xl">
+                        <div class="p-3 rounded-full bg-[#F4F7FF]"><img src="assets/checkbox.png" alt="checkbox"></div>
+                        <p class="font-medium opacity-[.8]">Task Assigned <br><span class="font-bold text-3xl">05</span></p>
+                    </div>
+                    <div class="flex flex-1 items-center pl-10 pr-20 pt-4 pb-5 justify-center gap-5 bg-linear-to-r from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8] rounded-xl">
+                        <img src="assets/board.png" alt="">
+                        <p class="text-2xl font-medium text-white">Discover Something <br> New Today!</p>
+                    </div>
+                    <div class="bg-[#F4F7FF] flex items-center gap-4 pt-8 pr-5 pb-6 pl-8 rounded-xl">
+                        <div class="p-3 rounded-full bg-white"><img src="assets/calender.png" alt=""></div>
+                        <p>Day , <br><span>Date</span></p>
+                    </div>
+                </div>
+                <div class="mt-16 grid grid-cols-3 gap-9">
+                    <div class="bg-[#F4F7FF] p-6 rounded-2xl">
+                        <p class="bg-white px-4 py-2 inline rounded-lg">ShopEase</p>
+                        <h4 class="text-2xl font-medium mt-4 mb-4">Fix Mobile Button Issue</h4>
+                        <div class="bg-white p-4 rounded-lg"><p>Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly</p></div>
+                        <div class="mt-7 flex justify-between items-center">
+                            <p class="text-[#00303C] opacity-[.7]">Deadline <br><span class="text-black font-medium">21 March 2025</span></p>
+                            <button class="text-white px-5 cursor-pointer py-3 bg-[#3752FD] rounded-lg">Completed</button>
+                        </div>
+                    </div>
+                    <div class="bg-[#F4F7FF] p-6 rounded-2xl">
+                        <p class="bg-white px-4 py-2 inline rounded-lg">CloudSync</p>
+                        <h4 class="text-2xl font-medium mt-4 mb-4">Add Dark Mode</h4>
+                        <div class="bg-white p-4 rounded-lg"><p>Store the user's preference in localStorage, update CSS variables dynamically, and apply a smooth transition effect.</p></div>
+                        <div class="mt-7 flex justify-between items-center">
+                            <p class="text-[#00303C] opacity-[.7]">Deadline <br><span class="text-black font-medium">24 March 2025</span></p>
+                            <button class="text-white px-5 cursor-pointer py-3 bg-[#3752FD] rounded-lg">Completed</button>
+                        </div>
+                    </div>
+                    <div class="bg-[#F4F7FF] p-6 rounded-2xl">
+                        <p class="bg-white px-4 py-2 inline rounded-lg">SwiftPay</p>
+                        <h4 class="text-2xl font-medium mt-4 mb-4">Optimize  Home page</h4>
+                        <div class="bg-white p-4 rounded-lg"><p>Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly</p></div>
+                        <div class="mt-7 flex justify-between items-center">
+                            <p class="text-[#00303C] opacity-[.7]">Deadline <br><span class="text-black font-medium">24 March 2025</span></p>
+                            <button class="text-white px-5 cursor-pointer py-3 bg-[#3752FD] rounded-lg">Completed</button>
+                        </div>
+                    </div>
+                    <div class="bg-[#F4F7FF] p-6 rounded-2xl">
+                        <p class="bg-white px-4 py-2 inline rounded-lg">Meta</p>
+                        <h4 class="text-2xl font-medium mt-4 mb-4">Add new emoji 🤲</h4>
+                        <div class="bg-white p-4 rounded-lg"><p>Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly</p></div>
+                        <div class="mt-7 flex justify-between items-center">
+                            <p class="text-[#00303C] opacity-[.7]">Deadline <br><span class="text-black font-medium">23 March 2025</span></p>
+                            <button class="text-white px-5 cursor-pointer py-3 bg-[#3752FD] rounded-lg">Completed</button>
+                        </div>
+                    </div>
+                    <div class="bg-[#F4F7FF] p-6 rounded-2xl">
+                        <p class="bg-white px-4 py-2 inline rounded-lg">Google LLC</p>
+                        <h4 class="text-2xl font-medium mt-4 mb-4">Integrate OpenAI API</h4>
+                        <div class="bg-white p-4 rounded-lg"><p>Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly</p></div>
+                        <div class="mt-7 flex justify-between items-center">
+                            <p class="text-[#00303C] opacity-[.7]">Deadline <br><span class="text-black font-medium">26 March 2025</span></p>
+                            <button class="text-white px-5 cursor-pointer py-3 bg-[#3752FD] rounded-lg">Completed</button>
+                        </div>
+                    </div>
+                    <div class="bg-[#F4F7FF] p-6 rounded-2xl">
+                        <p class="bg-white px-4 py-2 inline rounded-lg">Glassdoar</p>
+                        <h4 class="text-2xl font-medium mt-4 mb-4">Improve Job searching</h4>
+                        <div class="bg-white p-4 rounded-lg"><p>Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly</p></div>
+                        <div class="mt-7 flex justify-between items-center">
+                            <p class="text-[#00303C] opacity-[.7]">Deadline <br><span class="text-black font-medium">24 March 2025</span></p>
+                            <button class="text-white px-5 cursor-pointer py-3 bg-[#3752FD] rounded-lg">Completed</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="w-[22.875rem] bg-white rounded-2xl pt-6 px-8">
+                <div class="mb-10">
+                    <div class="flex items-center justify-center gap-4">
+                        <img src="assets/activity.png" alt="activity">
+                        <p class="text-xl font-medium">Activity Log</p>
+                    </div>
+                    <div class="flex justify-center items-center mt-4"><button class="text-white px-5 cursor-pointer py-3 bg-[#3752FD] rounded-lg">Clear History</button></div>
+                </div>
+                <div class="">
+                    
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
