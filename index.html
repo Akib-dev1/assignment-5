@@ -17,14 +17,14 @@
 <body class="bg-[#F4F7FF] h-full px-36 pt-6 pb-14" id="body">
     <header>
         <nav class="bg-white flex items-center justify-between p-6 rounded-2xl">
-            <div class="flex items-center gap-2">
+            <a href="#" class="flex items-center gap-2">
                 <img src="assets/logo.png" alt="logo">
                 <h1 class="font-bold text-4xl"><span class="font-normal">Dev</span>Board</h1>
-            </div>
+            </a>
             <div class="flex items-center gap-9">
                 <div class="flex items-center gap-2 bg-[#F4F7FF] p-3 rounded-[32px]">
                     <img src="assets/checkbox.png" alt="checkbox">
-                    <p class="font-bold text-3xl">23</p>
+                    <p class="font-bold text-3xl" id="task-counter">23</p>
                 </div>
                 <div class="p-3 rounded-full bg-[#F4F7FF] cursor-pointer" id="color-changer">
                     <img src="assets/theme-btn.png" alt="theame-btn">
@@ -37,7 +37,7 @@
             <div class="flex items-center gap-6">
                 <div class="flex items-center gap-5 pt-8 pr-5 pb-6 pl-8 bg-[#F4F7FF] rounded-xl">
                     <div class="p-3 rounded-full bg-[#F4F7FF]"><img src="assets/checkbox.png" alt="checkbox"></div>
-                    <p class="font-medium opacity-[.8]">Task Assigned <br><span class="font-bold text-3xl" id="task-counter">06</span></p>
+                    <p class="font-medium opacity-[.8]">Task Assigned <br><span class="font-bold text-3xl" id="task-cmplt-counter">06</span></p>
                 </div>
                 <div class="flex flex-1 items-center pl-10 pr-20 pt-4 pb-5 justify-center gap-5 bg-linear-to-r from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8] rounded-xl">
                     <img src="assets/board.png" alt="">
@@ -58,7 +58,7 @@
                     <div class="bg-white p-4 rounded-lg"><p>Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly</p></div>
                     <div class="mt-7 flex justify-between items-center">
                         <p class="text-[#00303C] opacity-[.7]">Deadline <br><span class="text-black font-medium">21 March 2025</span></p>
-                        <button class="text-white px-5 cursor-pointer py-3 bg-[#3752FD] rounded-lg">Completed</button>
+                        <button class="text-white px-5 cursor-pointer py-3 bg-[#3752FD] rounded-lg cmplt-btn disabled:bg-slate-300 disabled:text-black disabled:cursor-not-allowed">Completed</button>
                     </div>
                 </div>
                 <div class="bg-[#F4F7FF] p-6 rounded-2xl">
@@ -67,7 +67,7 @@
                     <div class="bg-white p-4 rounded-lg"><p>Store the user's preference in localStorage, update CSS variables dynamically, and apply a smooth transition effect.</p></div>
                     <div class="mt-7 flex justify-between items-center">
                         <p class="text-[#00303C] opacity-[.7]">Deadline <br><span class="text-black font-medium">24 March 2025</span></p>
-                        <button class="text-white px-5 cursor-pointer py-3 bg-[#3752FD] rounded-lg">Completed</button>
+                        <button class="text-white px-5 cursor-pointer py-3 bg-[#3752FD] rounded-lg cmplt-btn disabled:bg-slate-300 disabled:text-black disabled:cursor-not-allowed">Completed</button>
                     </div>
                 </div>
                 <div class="bg-[#F4F7FF] p-6 rounded-2xl">
@@ -76,7 +76,7 @@
                     <div class="bg-white p-4 rounded-lg"><p>Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly</p></div>
                     <div class="mt-7 flex justify-between items-center">
                         <p class="text-[#00303C] opacity-[.7]">Deadline <br><span class="text-black font-medium">24 March 2025</span></p>
-                        <button class="text-white px-5 cursor-pointer py-3 bg-[#3752FD] rounded-lg">Completed</button>
+                        <button class="text-white px-5 cursor-pointer py-3 bg-[#3752FD] rounded-lg cmplt-btn disabled:bg-slate-300 disabled:text-black disabled:cursor-not-allowed">Completed</button>
                     </div>
                 </div>
                 <div class="bg-[#F4F7FF] p-6 rounded-2xl">
@@ -85,7 +85,7 @@
                     <div class="bg-white p-4 rounded-lg"><p>Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly</p></div>
                     <div class="mt-7 flex justify-between items-center">
                         <p class="text-[#00303C] opacity-[.7]">Deadline <br><span class="text-black font-medium">23 March 2025</span></p>
-                        <button class="text-white px-5 cursor-pointer py-3 bg-[#3752FD] rounded-lg">Completed</button>
+                        <button class="text-white px-5 cursor-pointer py-3 bg-[#3752FD] rounded-lg cmplt-btn disabled:bg-slate-300 disabled:text-black disabled:cursor-not-allowed">Completed</button>
                     </div>
                 </div>
                 <div class="bg-[#F4F7FF] p-6 rounded-2xl">
@@ -94,7 +94,7 @@
                     <div class="bg-white p-4 rounded-lg"><p>Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly</p></div>
                     <div class="mt-7 flex justify-between items-center">
                         <p class="text-[#00303C] opacity-[.7]">Deadline <br><span class="text-black font-medium">26 March 2025</span></p>
-                        <button class="text-white px-5 cursor-pointer py-3 bg-[#3752FD] rounded-lg">Completed</button>
+                        <button class="text-white px-5 cursor-pointer py-3 bg-[#3752FD] rounded-lg cmplt-btn disabled:bg-slate-300 disabled:text-black disabled:cursor-not-allowed">Completed</button>
                     </div>
                 </div>
                 <div class="bg-[#F4F7FF] p-6 rounded-2xl">
@@ -103,7 +103,7 @@
                     <div class="bg-white p-4 rounded-lg"><p>Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly</p></div>
                     <div class="mt-7 flex justify-between items-center">
                         <p class="text-[#00303C] opacity-[.7]">Deadline <br><span class="text-black font-medium">24 March 2025</span></p>
-                        <button class="text-white px-5 cursor-pointer py-3 bg-[#3752FD] rounded-lg">Completed</button>
+                        <button class="text-white px-5 cursor-pointer py-3 bg-[#3752FD] rounded-lg cmplt-btn disabled:bg-slate-300 disabled:text-black disabled:cursor-not-allowed">Completed</button>
                     </div>
                 </div>
             </div>
