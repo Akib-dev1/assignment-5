@@ -6,6 +6,7 @@ let valueCmpltCounter=parseInt(document.querySelector("#task-cmplt-counter").inn
 const completeBtns=document.querySelectorAll(".cmplt-btn");
 const historyBox=document.querySelector("#history-box");
 const clearBtn=document.querySelector("#clear");
+const blogPage=document.querySelector("#blog-page");
 
 let now=new Date();
 day.innerText=now.toDateString().slice(0,3)+" ,";
@@ -44,4 +45,9 @@ function historyDiv(title){
 }
 clearBtn.addEventListener("click", function (event){
     historyBox.innerHTML="";
+});
+
+blogPage.addEventListener("click", function (event){
+    event.preventDefault();
+    window.location.href="blog.html";
 });
